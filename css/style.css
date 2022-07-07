@@ -39,7 +39,7 @@ img {
 /* notification sec */
 .notifications {
     background-color: #8edafb;
-    height: 13vh;
+    height: 60px;
 }
 
 .bell {
@@ -59,7 +59,7 @@ img {
 }
 
 .chat-boxs {
-    height: calc(100% - 160px);
+    height: calc(100% - 180px);
     overflow-y: scroll;
     background-color: #fffffe;
 }
