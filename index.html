@@ -24,7 +24,7 @@
                         
                         <div class="d-flex align-items-center">
                             <img src="./img/avatar_io.jpg" alt="sofia.avatar">
-                            <span>Sofia</span>
+                            <span class="mx-1">Sofia</span>
                         </div>
 
                         <div class="button-sofia">
@@ -56,8 +56,8 @@
                     <!-- chat box -->
                     <div class="list-chat-boxs">
                         <ul class="m-0">
-                            <li v-for="(contact , index) in contacts" class="list-chat-box d-flex position-relative align-items-center" >
-                                <img :src="`./img/avatar${contact.avatar}.jpg`" alt="">
+                            <li v-for="(contact , index) in contacts" class="list-chat-box d-flex position-relative align-items-center" :class="{active: index === indexChat}" @click="chatListBox(index)">
+                                <img class="mx-3" :src="`./img/avatar${contact.avatar}.jpg`" alt="">
                             </li>
                         </ul>
                     </div>

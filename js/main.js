@@ -2,7 +2,7 @@ const app = new Vue (
     {
         el: '#app',
         data: {
-            iChat: 0,
+            indexChat: 0,
             contacts: [
                 {
                     name: 'Michele',
@@ -167,5 +167,9 @@ const app = new Vue (
                 },
             ],
         },
-    
+        methods: {
+            chatListBox: function(chatList) {
+                this.indexChat = chatList
+            },
+    }
 });
