@@ -32,3 +32,6 @@ img {
     width: calc(100% / 3 * 2);
 }
 
+.button i {
+    font-size: 1.3rem;
+}
