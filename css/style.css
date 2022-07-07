@@ -69,8 +69,8 @@ background-color: #fafafa;
 }
 
 /* list chat box */
-.list-chat-boxs {
-    height: calc(100% - 180px);
+.list-chat-boxes {
+    height: calc(100% - 185px);
     overflow-y: scroll;
     background-color: #fffffe;
 }
@@ -79,7 +79,6 @@ background-color: #fafafa;
     border-top: 1px solid;
     border-color: #f5f5f5;
     height: 75px;
-    font-size: 28px;
     width: 100%;
 }
 
@@ -87,7 +86,13 @@ li.active {
     background-color: #E9EBEB;
 }
 
+.cont-list {
+    font-size: 10px;
+}
 
+.single-chat {
+    color: grey;
+}
 
 /* right column */
 .chat {

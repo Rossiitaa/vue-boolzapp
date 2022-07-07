@@ -54,10 +54,15 @@
                     </div>
 
                     <!-- chat box -->
-                    <div class="list-chat-boxs">
+                    <div class="list-chat-boxes">
                         <ul class="m-0">
                             <li v-for="(contact , index) in contacts" class="list-chat-box d-flex position-relative align-items-center" :class="{active: index === indexChat}" @click="chatListBox(index)">
                                 <img class="mx-3" :src="`./img/avatar${contact.avatar}.jpg`" alt="">
+
+                                <div class="cont-list d-flex flex-column align-top">
+                                    <h6 class="m-0">{{contact.name}}</h6>
+                                    <span class="m-0 single-chat">Ultimo messaggio inviato</span>
+                                </div>
                             </li>
                         </ul>
                     </div>
