@@ -54,10 +54,12 @@
                     </div>
 
                     <!-- chat box -->
-                    <div class="chat-boxs">
-                        <div v-for="(element , index) in contacts" class="chat-box d-flex position-relative">
-                            
-                        </div>
+                    <div class="list-chat-boxs">
+                        <ul class="m-0">
+                            <li v-for="(contact , index) in contacts" class="list-chat-box d-flex position-relative align-items-center" >
+                                <img :src="`./img/avatar${contact.avatar}.jpg`" alt="">
+                            </li>
+                        </ul>
                     </div>
             </div>
 
