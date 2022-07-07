@@ -1,0 +1,19 @@
+.bg-head {
+    background-color: #049688;
+    height: 23vh;
+}
+
+.bg-main {
+    background-color: #dbdbd2;
+    height: 77vh;
+}
+
+.container-chat {
+    position: fixed;
+    background-color: #eaeaea;
+    height: 100vh;
+    width: 80vw;
+    top: 4vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
