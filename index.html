@@ -12,13 +12,14 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
 </head>
 <body>
-    <div class="bg-head"></div>
-    <div class="bg-main"></div>
     <main>
+    <div class="bg-head"></div>
         <section id="app" class="d-flex">
             <div class="container-chat ">
+                <!-- left column -->
                 <div class="contact">
 
+                    <!-- info user -->
                     <div class="d-flex justify-content-between align-items-center p-2">
                         
                         <div class="d-flex align-items-center">
@@ -26,13 +27,14 @@
                             <span>Sofia</span>
                         </div>
 
-                        <div class=" button">
+                        <div class="button-sofia">
                             <i class="fa-solid fa-circle-notch px-2"></i>
                             <i class="fa-solid fa-message px-2"></i>
                             <i class="fa-solid fa-ellipsis-vertical px-2"></i>
                         </div>
                     </div>
 
+                    <!-- notifications -->
                     <div class="notifications p-3 d-flex align-items-center">
                         <div>
                             <i class="fa-solid fa-bell-slash bell"></i>
@@ -43,11 +45,19 @@
                         </div>
                     </div>
 
+                    <!-- search chat -->
                     <div class="search-menu input-group flex-nowrap p-2">
-                        <span class="input-group-text bg-light col-2 d-block" id="addon-wrapping">
+                        <button class="input-group-text bg-light col-2 d-block" id="addon-wrapping">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                        </span>
+                        </button>
                         <input type="text" class="form-control bg-light col-10" placeholder="Cerca o inizia una nuova chat">
+                    </div>
+
+                    <!-- chat box -->
+                    <div class="chat-boxs">
+                        <div v-for="(element , index) in contacts" class="chat-box d-flex position-relative">
+                            
+                        </div>
                     </div>
 
                 <div class="chat"></div>
