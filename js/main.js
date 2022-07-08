@@ -3,6 +3,7 @@ const app = new Vue (
         el: '#app',
         data: {
             indexChat: 0,
+            newMessage: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -171,5 +172,15 @@ const app = new Vue (
             chatListBox: function(chatList) {
                 this.indexChat = chatList
             },
+            sendMessage: function() {
+                if (this.newMessage != '') {
+                    this.contacts[this.indexChat].messages.push({
+                        date: '10/01/2020 15:51:00',
+                        message: this.newMessage,
+                        status: 'sent'
+                    })
+                    this.newMessage = '';
+                }
+            }
     }
 });
