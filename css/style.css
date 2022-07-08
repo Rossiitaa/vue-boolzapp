@@ -90,9 +90,18 @@ li.active {
     font-size: 10px;
 }
 
-.single-chat {
+.message-list-chat {
     color: grey;
 }
+
+.time-list-chat {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    color: grey;
+
+}
+
 
 /* right column */
 .chat {
