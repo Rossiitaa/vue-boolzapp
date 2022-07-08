@@ -132,10 +132,19 @@ li.active {
 
 .message {
     border-radius: 10px;
-    padding: 10px 10px;
+    padding: 18px 30px 18px 10px;
     width: 45%;
     overflow: auto;
     margin: 8px;
+}
+
+.message > span {
+    color: grey;
+    opacity: 0.5;
+    font-size: .7rem;
+    position: absolute;
+    bottom: 1px;
+    right: 8px;
 }
 
 
