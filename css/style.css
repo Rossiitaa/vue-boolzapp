@@ -13,6 +13,8 @@ body {
     height: 150px;
 }
 
+
+
 .container-chat {
     position: fixed;
     background-color: #eaeaea;
@@ -31,7 +33,7 @@ img {
 }
 
 /* left column */
-.contact {
+.left {
     width: 35%;
     height: 100%;
     border-right: 1px solid #d6d6d6;
@@ -109,7 +111,7 @@ li.active {
 
 
 /* right column */
-.chat {
+.right {
     width: 65%;
     height: 100%;
     background-image: url(../img/mine.jpg);
@@ -124,6 +126,25 @@ li.active {
 
 /* chat  */
 .message-container {
-    height: calc(100% - 71px);
-    margin: 0 auto;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.message {
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 45%;
+    overflow: auto;
+    margin: 8px;
+}
+
+
+.sent {
+    background-color: #D5F9BA;
+    align-self: flex-end;
+}
+
+.received {
+    background-color: #fff;
+    align-self: flex-start;
 }

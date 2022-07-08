@@ -17,7 +17,7 @@
         <section id="app" class="d-flex">
             <div class="container-chat d-flex">
                 <!-- left column -->
-                <div class="contact">
+                <div class="left">
 
                     <!-- info user -->
                     <div class="d-flex justify-content-between align-items-center p-2">
@@ -73,17 +73,16 @@
 
 
                     <!-- right column -->
-                <div class="chat d-flex">
+                <div class="right">
 
                     <!-- top chat -->
                     <div class="d-flex p-2 chat-active-top align-items-center justify-content-between">
 
                         <div class="d-flex">
                             <img class="mx-3" :src="`./img/avatar${contacts[indexChat].avatar}.jpg`" alt="">
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h6 class="m-0">{{contacts[indexChat].name}}</h6>
-                                    <span class="m-0 text-muted">Ultimo accesso oggi alle 12:00</span>
-                                    <span></span>
+                            <div class="d-flex flex-column justify-content-center">
+                                <h6 class="m-0">{{contacts[indexChat].name}}</h6>
+                                <span class="m-0 text-muted">Ultimo accesso oggi alle 12:00</span>
                                 </div>
                         </div>    
 
@@ -93,16 +92,23 @@
                             <i class="fa-solid fa-ellipsis-vertical px-2"></i>
                         </div>
                     </div>
+                
 
                     <!-- messages -->
-                    <div class="message-container d-flex flex-column">
-                        <ul class="d-flex">
-                            <li></li>
+                    <div class="message-container">
+                        <ul class="d-flex flex-column">
+                            <li v-for="(element, index) in contacts[indexChat].messages"
+                                class="message position-relative "
+                                :class="(element.status === 'received') ? 'received' : 'sent'">
+                                    {{ element.message }}
+                                    <span>
+                                        {{ element.date }}
+                                    </span>
+                            </li>
                         </ul>
                     </div>
-
+                
                 </div>
-
             </div>
 
 
