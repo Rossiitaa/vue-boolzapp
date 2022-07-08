@@ -15,7 +15,7 @@
     <main>
     <div class="bg-head"></div>
         <section id="app" class="d-flex">
-            <div class="container-chat">
+            <div class="container-chat d-flex">
                 <!-- left column -->
                 <div class="contact">
 
@@ -59,7 +59,7 @@
                             <li v-for="(contact , index) in contacts" class="list-chat-box d-flex position-relative align-items-center" :class="{active: index === indexChat}" @click="chatListBox(index)">
                                 <img class="mx-3" :src="`./img/avatar${contact.avatar}.jpg`" alt="">
 
-                                <div class="cont-list d-flex flex-column align-top">
+                                <div class="cont-list d-flex flex-column">
                                     <h6 class="m-0">{{contact.name}}</h6>
                                     <span class="m-0 message-list-chat">Ultimo messaggio inviato</span>
                                     <span class="time-list-chat ">12.00</span>
@@ -67,11 +67,20 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+
+
+
+
+                    <!-- right column -->
+                <div class="chat d-flex">
+                    <div class="d-flex align-items-center p-2"></div>
+                </div>
+
             </div>
 
 
-            <!-- right column -->
-            <div class="chat"></div>
+            
         </section>
     </main>
 </body>
