@@ -127,10 +127,10 @@ li.active {
 
 /* chat  */
 .message-container {
+    height: calc(100% - 126px);
     width: 100%;
     margin: 0 auto;
     overflow-y: scroll;
-
 }
 
 .message {
@@ -164,7 +164,7 @@ li.active {
 /* text message */  
 .text-container {
     background-color: #f3eeea;
-    height: 50px;
+    height: 55px;
 }
 
 .text-container a {
@@ -172,7 +172,7 @@ li.active {
 }
 
 .text-container input {
-        width: 80%;
+        width: 85%;
         padding: 7px;
         border: none;
         border-radius: 8px;    
