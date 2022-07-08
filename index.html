@@ -74,7 +74,15 @@
 
                     <!-- right column -->
                 <div class="chat d-flex">
-                    <div class="d-flex align-items-center p-2"></div>
+
+                    <div class="d-flex p-2 chat-active-top align-items-center">
+                        <img class="mx-3" :src="`./img/avatar${contacts[indexChat].avatar}.jpg`" alt="">
+                        <div class="d-flex flex-column">
+                            <h6 class="m-0">{{contacts[indexChat].name}}</h6>
+                            <span class="m-0 text-muted">Ultimo accesso oggi alle 12:00</span>
+                            <span></span>
+                        </div>
+                    </div>
                 </div>
 
             </div>

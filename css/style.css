@@ -112,4 +112,12 @@ li.active {
 .chat {
     width: 65%;
     height: 100%;
+    background-image: url(../img/mine.jpg);
+}
+
+.chat-active-top {
+    background-color: #E9EBEB;
+    height: 71px;
+    width: 100%;
+    font-size: 10px;
 }
