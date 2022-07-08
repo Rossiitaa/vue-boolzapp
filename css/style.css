@@ -121,3 +121,9 @@ li.active {
     width: 100%;
     font-size: 10px;
 }
+
+/* chat  */
+.message-container {
+    height: calc(100% - 71px);
+    margin: 0 auto;
+}
