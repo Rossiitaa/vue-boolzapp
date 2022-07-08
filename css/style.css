@@ -115,6 +115,7 @@ li.active {
     width: 65%;
     height: 100%;
     background-image: url(../img/mine.jpg);
+    
 }
 
 .chat-active-top {
@@ -126,8 +127,10 @@ li.active {
 
 /* chat  */
 .message-container {
-    width: 90%;
-    margin: 30px auto;
+    width: 100%;
+    margin: 0 auto;
+    overflow-y: scroll;
+
 }
 
 .message {
@@ -156,4 +159,21 @@ li.active {
 .received {
     background-color: #fff;
     align-self: flex-start;
+}
+
+/* text message */  
+.text-container {
+    background-color: #f3eeea;
+    height: 50px;
+}
+
+.text-container a {
+    color: #6b7376;
+}
+
+.text-container input {
+        width: 80%;
+        padding: 7px;
+        border: none;
+        border-radius: 8px;    
 }

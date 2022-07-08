@@ -96,7 +96,7 @@
 
                     <!-- messages -->
                     <div class="message-container">
-                        <ul class="d-flex flex-column">
+                        <ul class="d-flex flex-column p-5">
                             <li v-for="(element, index) in contacts[indexChat].messages"
                                 class="message position-relative "
                                 :class="(element.status === 'received') ? 'received' : 'sent'">
@@ -106,6 +106,13 @@
                                     </span>
                             </li>
                         </ul>
+                    </div>
+
+                    <!-- text message -->
+                    <div class="text-container align-items-center d-flex justify-content-around">
+                        <a href="#"><i class="fa-solid fa-face-smile"></i></a>
+                        <input type="text" placeholder="Scrivi un messaggio">
+                        <a href="#"><i class="fa-solid fa-microphone"></i></a>
                     </div>
                 
                 </div>
