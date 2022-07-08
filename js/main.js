@@ -174,12 +174,12 @@ const app = new Vue (
             },
             sendMessage: function() {
                 if (this.newMessage != '') {
-                    this.contacts[this.indexChat].messages.push({
-                        date: '10/01/2020 15:51:00',
-                        message: this.newMessage,
-                        status: 'sent'
-                    })
-                    this.newMessage = '';
+                this.contacts[this.indexChat].messages.push({
+                    date: '' + new Date().toLocaleString(),
+                    message: this.newMessage,
+                    status: 'sent'
+                })
+                this.newMessage = '';
                 }
             }
     }
