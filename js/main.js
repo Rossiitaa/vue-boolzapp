@@ -4,6 +4,7 @@ const app = new Vue (
         data: {
             indexChat: 0,
             newMessage: '',
+            searchChat: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -172,6 +173,7 @@ const app = new Vue (
             chatListBox: function(chatList) {
                 this.indexChat = chatList
             },
+            
             sendMessage: function() {
                 if (this.newMessage != '') {
                 this.contacts[this.indexChat].messages.push({
@@ -183,6 +185,7 @@ const app = new Vue (
                 setTimeout(this.receivedMessage, 1000);
                 }
             },
+            
             receivedMessage : function() {
                 this.contacts[this.indexChat].messages.push({
                     date: '' + new Date().toLocaleString(),
@@ -190,5 +193,11 @@ const app = new Vue (
                     status: 'received'
                 },)
             },
-    }
+
+            searchContact: function() {
+                this.contacts.forEach((element) => {
+                    return element.visible = element.name.toLowerCase().includes(this.searchChat.toLowerCase());
+                });
+        }
+    },
 });
