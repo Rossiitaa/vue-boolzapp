@@ -180,6 +180,7 @@ const app = new Vue (
                     status: 'sent'
                 })
                 this.newMessage = '';
+                setTimeout(this.receivedMessage, 1000);
                 }
             },
             receivedMessage : function() {
@@ -187,7 +188,7 @@ const app = new Vue (
                     date: '' + new Date().toLocaleString(),
                     message: 'ok!!',
                     status: 'received'
-                }, 1000)
-            }
+                },)
+            },
     }
 });
