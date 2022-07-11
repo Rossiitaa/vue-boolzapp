@@ -181,6 +181,13 @@ const app = new Vue (
                 })
                 this.newMessage = '';
                 }
+            },
+            receivedMessage : function() {
+                this.contacts[this.indexChat].messages.push({
+                    date: '' + new Date().toLocaleString(),
+                    message: 'ok!!',
+                    status: 'received'
+                }, 1000)
             }
     }
 });
