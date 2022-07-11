@@ -98,17 +98,29 @@
                     <div class="message-container">
                         <ul class="d-flex flex-column p-5">
                             <li v-for="(element, index) in contacts[indexChat].messages"
-                                class="message position-relative "
+                                class="message position-relative"
                                 :class="(element.status === 'received') ? 'received' : 'sent'">
                                     {{ element.message }}
                                     <span>
                                         {{ element.date }}
                                     </span>
+                                    
+                                    <div class="dropdown rs_dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <li>
+                                                <a class="dropdown-item" href="#">Message info</a>
+                                                <a class="dropdown-item" href="#">Delete message</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                             </li>
                         </ul>
+                        
                     </div>
 
-                    <!-- text message -->
+                    <!-- insert text -->
                     <div class="text-container align-items-center d-flex justify-content-around">
                         <a href="#"><i class="fa-solid fa-face-smile"></i></a>
                         <input type="text" placeholder="Scrivi un messaggio" v-model="newMessage" @keyUp.Enter="sendMessage(newMessage)">
@@ -118,8 +130,6 @@
                 </div>
             </div>
 
-
-            
         </section>
     </main>
 </body>

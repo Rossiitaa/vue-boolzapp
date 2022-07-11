@@ -177,3 +177,20 @@ li.active {
         border: none;
         border-radius: 8px;    
 }
+
+/* dropwdown menu */
+.rs_dropdown {
+    position: absolute;
+    right: 5px;
+    top: 1px;
+    opacity: 0.5;
+    display: none;
+}
+
+.message:hover .rs_dropdown {
+    display: inline-block;
+}
+
+
+
+

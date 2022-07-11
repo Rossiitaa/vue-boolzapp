@@ -173,7 +173,7 @@ const app = new Vue (
             chatListBox: function(chatList) {
                 this.indexChat = chatList
             },
-            
+
             sendMessage: function() {
                 if (this.newMessage != '') {
                 this.contacts[this.indexChat].messages.push({
@@ -198,6 +198,7 @@ const app = new Vue (
                 this.contacts.forEach((element) => {
                     return element.visible = element.name.toLowerCase().includes(this.searchChat.toLowerCase());
                 });
-        }
+        },
+            
     },
 });
