@@ -50,13 +50,13 @@
                         <button class="input-group-text bg-light col-2 d-block" id="addon-wrapping">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
-                        <input type="text" class="form-control bg-light col-10" placeholder="Cerca o inizia una nuova chat">
+                        <input type="text" v-model="searchChat" @keyUp="searchContact" class="form-control bg-light col-10" placeholder="Cerca o inizia una nuova chat">
                     </div>
 
                     <!-- chat box -->
                     <div class="list-chat-boxes">
                         <ul class="m-0">
-                            <li v-for="(contact , index) in contacts" class="list-chat-box d-flex position-relative align-items-center" :class="{active: index === indexChat}" @click="chatListBox(index)">
+                            <li v-if="contact.visible" v-for="(contact , index) in contacts" class="list-chat-box d-flex position-relative align-items-center" :class="{active: index === indexChat}" @click="chatListBox(index)">
                                 <img class="mx-3" :src="`./img/avatar${contact.avatar}.jpg`" alt="">
 
                                 <div class="cont-list d-flex flex-column">
