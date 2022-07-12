@@ -13,6 +13,10 @@ body {
     height: 150px;
 }
 
+li {
+    list-style: none;
+}
+
 
 
 .container-chat {
@@ -137,7 +141,6 @@ li.active {
     border-radius: 10px;
     padding: 18px 30px 18px 10px;
     width: 45%;
-    overflow: auto;
     margin: 8px;
 }
 
