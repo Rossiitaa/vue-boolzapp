@@ -181,9 +181,9 @@ li.active {
 /* dropwdown menu */
 .rs_dropdown {
     position: absolute;
-    right: 5px;
+    right: 10px;
     top: 1px;
-    opacity: 0.5;
+    opacity: 0.8;
     display: none;
 }
 
@@ -191,5 +191,9 @@ li.active {
     display: block;
 }
 
+
+.rs_btn {
+    color: #000;
+}
 
 

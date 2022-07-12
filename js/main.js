@@ -200,6 +200,8 @@ const app = new Vue (
                     return element.visible = element.name.toLowerCase().includes(this.searchChat.toLowerCase());
                 });
         },
-        
+        deleteMessage: function(index) {
+            this.contacts[this.indexChat].messages.splice(index, 1);
+        }
     },
 });
