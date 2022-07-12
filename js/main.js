@@ -5,6 +5,7 @@ const app = new Vue (
             indexChat: 0,
             newMessage: '',
             searchChat: '',
+
             contacts: [
                 {
                     name: 'Michele',
@@ -199,6 +200,6 @@ const app = new Vue (
                     return element.visible = element.name.toLowerCase().includes(this.searchChat.toLowerCase());
                 });
         },
-            
+        
     },
 });

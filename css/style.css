@@ -188,9 +188,8 @@ li.active {
 }
 
 .message:hover .rs_dropdown {
-    display: inline-block;
+    display: block;
 }
-
 
 
 
