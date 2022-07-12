@@ -186,14 +186,12 @@ li.active {
     position: absolute;
     right: 10px;
     top: 1px;
-    opacity: 0.8;
     display: none;
 }
 
 .message:hover .rs_dropdown {
     display: block;
 }
-
 
 .rs_btn {
     color: #000;
