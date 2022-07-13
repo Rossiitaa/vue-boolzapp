@@ -197,11 +197,21 @@ const app = new Vue (
 
             searchContact: function() {
                 this.contacts.forEach((element) => {
-                    return element.visible = element.name.toLowerCase().includes(this.searchChat.toLowerCase());
+                    element.visible = element.name.toLowerCase().includes(this.searchChat.toLowerCase());
                 });
         },
         deleteMessage: function(index) {
             this.contacts[this.indexChat].messages.splice(index, 1);
-        }
+        },
+        getLastMessage: function(index) {
+            if (this.contacts[index].messages.length > 0) {
+                return this.contacts[index].messages[this.contacts[index].messages.length - 1];
+            }
+            return {
+                date: '',
+                message: 'Nessun nuovo messaggio',
+                status: ''
+            }
+        }, 
     },
 });

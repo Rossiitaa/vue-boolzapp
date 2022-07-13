@@ -68,9 +68,9 @@
                                 <img class="mx-3" :src="`./img/avatar${contact.avatar}.jpg`" alt="">
 
                                 <div class="cont-list d-flex flex-column">
-                                    <h6 class="m-0">{{contact.name}}</h6>
-                                    <span class="m-0 message-list-chat">Ultimo messaggio inviato</span>
-                                    <span class="time-list-chat ">12.00</span>
+                                    <h6 class="m-0">{{ contact.name }}</h6>
+                                    <span class="m-0 message-list-chat">{{ getLastMessage(index).message }}</span>
+                                    <span class="time-list-chat ">{{ getLastMessage(index).date }}</span>
                                 </div>
                             </li>
                         </ul>
